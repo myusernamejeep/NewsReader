@@ -1,0 +1,47 @@
+{
+  "name": "News Reader",
+  "description": "Read news",
+  "version": "1.0",
+  "default_locale": "en",
+  "manifest_version": 1 ,
+  "app": {
+    "background": {
+      "scripts": [
+        "javascripts/background.js",
+        "javascripts/vendor/jquery.min.js",
+        "javascripts/vendor/jquery-migrate.min.js",      
+        "javascripts/vendor/underscore.min.js",
+        "javascripts/vendor/backbone.min.js",
+        "javascripts/vendor/backbone-indexeddb.js",
+        "javascripts/vendor/jfeed.min.js",
+        "javascripts/vendor/filer.min.js",
+        "javascripts/vendor/inflection.js",
+        "javascripts/app.js",
+        "javascripts/lib/feedParsers/google.js",
+        "javascripts/models/setting.js",
+        "javascripts/models/article.js",
+        "javascripts/views/notifications-view.js",
+        "javascripts/setup.js",
+        "javascripts/background-setup.js",
+        "javascripts/ral.min.js",
+        
+      ]
+    }
+  },
+  "icons": {
+    "16": "icon_128.png",
+    "128": "icon_128.png"
+  },
+  "offline_enabled": true,
+  "permissions": [
+    "unlimitedStorage",
+    "storage",
+    "notifications",
+    "experimental",
+    "webview",
+    "http://nt3.ggpht.com/*",
+    "http://news.google.com/*",
+    "http://*/*",
+    "http://news-reader-proxy.herokuapp.com"
+  ]
+}

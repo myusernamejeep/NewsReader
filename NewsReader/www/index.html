@@ -1,0 +1,107 @@
+﻿<html>
+  <head>
+    <title>News Reader</title>
+
+    <style type="text/css">
+      @import url("stylesheets/minified.css");
+    </style>
+
+    <script src="javascripts/vendor/jquery.min.js"></script>
+    <script src="javascripts/vendor/jquery-migrate.min.js"></script>
+    <script src="javascripts/vendor/underscore.min.js"></script>
+    <script src="javascripts/vendor/backbone.min.js"></script>
+    <script src="javascripts/vendor/backbone.eventdata.js"></script>
+    <script src="javascripts/vendor/backbone-indexeddb.js"></script>
+    <script src="javascripts/vendor/jquery.jfeed.pack.js"></script>
+    <script src="javascripts/vendor/masonry.min.js"></script>
+    <script src="javascripts/vendor/masonry_ordered.js"></script>
+    <script src="javascripts/vendor/jquery.timeago.js"></script>
+    <script src="javascripts/vendor/jquery.tinysort.min.js"></script>
+    <script src="javascripts/vendor/hotkeys.js"></script>
+    <script src="javascripts/vendor/inflection.js"></script>
+    <script src="javascripts/vendor/ral.min.js"></script>
+ 
+    <script src="javascripts/app.js"></script>
+    <script src="javascripts/lib/feedParsers/google.js"></script>
+    <script src="javascripts/models/setting.js"></script>
+    <script src="javascripts/models/article.js"></script>
+    <script src="javascripts/models/displayed-articles.js"></script>
+    <script src="javascripts/models/search.js"></script>
+    <script src="javascripts/views/window-view.js"></script>
+    <script src="javascripts/views/article-view.js"></script>
+    <script src="javascripts/views/category-view.js"></script>
+    <script src="javascripts/views/search-view.js"></script>
+    <script src="javascripts/views/search-results-view.js"></script>
+    <script src="javascripts/views/settings-view.js"></script>
+    <script src="javascripts/views/closewindow-view.js"></script>
+    <script src="javascripts/views/fullscreen-view.js"></script>
+    <script src="javascripts/templates.js"></script>
+    <script src="javascripts/setup.js"></script>
+    <script src="javascripts/foreground-setup.js"></script>
+  </head>
+  <body>
+    <nav id="main_nav">
+      <ul class="icon_list">
+        <li class="icon" id="close_search">
+          <a href="#">*</a>
+        </li>
+        <li class="icon" id="search_menu">
+          <a href="#" id="search_trigger">s</a>
+          <form id="search_form">
+            <input type="text" id="search_term" />
+            <button id="search_button" type="submit">s</button>
+          </form>
+        </li>
+        <li class="category_list_trigger">
+          <a href="#/categories/" id="categories_trigger">Categories</a>
+          <div class="dropdown">
+            <ul class="category_list"></ul>
+          </div>
+        </li>
+      </ul>
+      <ul class="icon_list right_icon_list">
+        <li class="icon">
+          <a href="#/settings/" id="settings_trigger">y</a>
+          <div class="dropdown settings_dropdown">
+            <div class="content_block">
+              <h2 class="tertiary_header">Edit Categories</h2>
+              <p class="hint">Select your preferred categories:</p>
+              <ul id="settings_categories"></ul>
+            </div>
+            <!--
+            <div class="content_block">
+              <h2 class="tertiary_header">Change Location</h2>
+              <p class="hint">Select a country or region:</p>
+              <select id="settings_languages"></select>
+            </div>
+            -->
+          </div>
+        </li>
+        <!--
+        <li class="icon">
+          <a href="#" id="fullscreen_trigger">`</a>
+        </li>
+        -->
+        <li class="icon">
+          <a href="#" id="close_trigger">*</a>
+        </li>
+      </ul>
+    </nav>
+    <ol id="news_container"></ol>
+    <ol id="search_container"></ol>
+    <div id="browser_wrap">
+      <header class="browser_controls">
+        <h2 class="secondary_heading browser_heading"></h2>
+        <nav class="browser_tools">
+          <a href="#" class="close_browser_trigger">*</a>
+        </nav>
+      </header>
+      <div id="browser_container"></div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+    cordova_app.initialize();
+    </script>
+  </body>
+</html>
