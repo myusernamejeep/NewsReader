@@ -3,7 +3,7 @@ var __p='';var print=function(){__p+=Array.prototype.join.call(arguments, '')};
 with(obj||{}){
 __p+='';
  if (image) { 
-;__p+='\n  <img class="img_news" data-src="'+
+;__p+='\n  <img class="img_news" src="'+
  window.App.proxy_img_url + ( image )+
 '" />\n';
  } 

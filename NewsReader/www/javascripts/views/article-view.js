@@ -23,7 +23,7 @@ App.ArticleView = Backbone.View.extend({
     //console.log(img);
     if(!!img) {
       var remoteImage = new RAL.RemoteImage({element: $("img", this.el)[0]});
-      RAL.Queue.add(remoteImage, {autoStart: true});
+      //RAL.Queue.add(remoteImage, {autoStart: true});
     }
     
     return this;

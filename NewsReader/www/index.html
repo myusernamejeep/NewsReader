@@ -5,23 +5,25 @@
     <style type="text/css">
       @import url("stylesheets/minified.css");
     </style>
+    <script src="javascripts/vendors/jquery-1.7.2.min.js"></script>
+    <!--<script src="javascripts/vendors/jquery-migrate.min.js"></script>-->
+    <script src="javascripts/vendors/underscore.min.js"></script>
+    <script src="javascripts/vendors/backbone.min.js"></script>
+    <script src="javascripts/vendors/backbone.eventdata.js"></script>
+    <script src="javascripts/vendors/backbone-indexeddb.js"></script>
 
-    <script src="javascripts/vendor/jquery.min.js"></script>
-    <script src="javascripts/vendor/jquery-migrate.min.js"></script>
-    <script src="javascripts/vendor/underscore.min.js"></script>
-    <script src="javascripts/vendor/backbone.min.js"></script>
-    <script src="javascripts/vendor/backbone.eventdata.js"></script>
-    <script src="javascripts/vendor/backbone-indexeddb.js"></script>
-    <script src="javascripts/vendor/jquery.jfeed.pack.js"></script>
-    <script src="javascripts/vendor/masonry.min.js"></script>
-    <script src="javascripts/vendor/masonry_ordered.js"></script>
-    <script src="javascripts/vendor/jquery.timeago.js"></script>
-    <script src="javascripts/vendor/jquery.tinysort.min.js"></script>
-    <script src="javascripts/vendor/hotkeys.js"></script>
-    <script src="javascripts/vendor/inflection.js"></script>
-    <script src="javascripts/vendor/ral.min.js"></script>
+    <script type="text/javascript" src="javascripts/app.js"></script> 
  
-    <script src="javascripts/app.js"></script>
+    <script src="javascripts/vendors/jquery.jfeed.pack.js"></script>
+    <script src="javascripts/vendors/masonry.min.js"></script>
+    <script src="javascripts/vendors/masonry_ordered.js"></script>
+    <script src="javascripts/vendors/jquery.timeago.js"></script>
+    <script src="javascripts/vendors/jquery.tinysort.min.js"></script>
+    <script src="javascripts/vendors/hotkeys.js"></script>
+    <script src="javascripts/vendors/inflection.js"></script>
+    <script src="javascripts/vendors/ral.min.js"></script> 
+ 
+    <script src="javascripts/app.js"></script> 
     <script src="javascripts/lib/feedParsers/google.js"></script>
     <script src="javascripts/models/setting.js"></script>
     <script src="javascripts/models/article.js"></script>
@@ -38,6 +40,7 @@
     <script src="javascripts/templates.js"></script>
     <script src="javascripts/setup.js"></script>
     <script src="javascripts/foreground-setup.js"></script>
+    -->
   </head>
   <body>
     <nav id="main_nav">
@@ -98,10 +101,14 @@
       </header>
       <div id="browser_container"></div>
     </div>
+    <!---->
 
     <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript">
-    cordova_app.initialize();
-    </script>
+    <script type="text/javascript" src="javascripts/index.js"></script>
+    
+    <script data-main="javascripts/main" data-root="" src="javascripts/vendors/require.js"></script>
+    <!--<script type="text/javascript">
+      cordova_app.initialize();
+    </script> -->
   </body>
 </html>
