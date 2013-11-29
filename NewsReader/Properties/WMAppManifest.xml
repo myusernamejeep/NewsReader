@@ -3,11 +3,15 @@
   <DefaultLanguage xmlns="" code="en-US" />
   <Languages xmlns="">
     <Language code="en-US" />
+    <Language code="th-TH" />
   </Languages>
-  <App xmlns="" ProductID="{6c8421da-6a97-45e7-b847-218a31c6ae04}" Title="NewsReader" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="NewsReader author" BitsPerPixel="32" Description="Apache Cordova for Windows Phone" Publisher="NewsReader" PublisherID="{db093ed5-53b1-45f7-af72-751e8f36ab80}">
-    <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
+  <App xmlns="" ProductID="{6c8421da-6a97-45e7-b847-218a31c6ae04}" Title="NewsReader" RuntimeType="Silverlight" Version="0.1.0.0" Genre="apps.normal" Author="Jumphol Tangtrairattanakul" BitsPerPixel="32" Description="NewsReader for Windows Phone" Publisher="Jumphol Tangtrairattanakul" PublisherID="{db093ed5-53b1-45f7-af72-751e8f36ab80}">
+    <IconPath IsRelative="true" IsResource="false">www\img\icon_128.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_PUSH_NOTIFICATION" />
+      <Capability Name="ID_CAP_IDENTITY_USER" />
     </Capabilities>
     <Tasks>
       <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
@@ -15,17 +19,24 @@
     <Tokens>
       <PrimaryToken TokenID="NewsReaderToken" TaskName="_default">
         <TemplateFlip>
-          <SmallImageURI IsResource="false" IsRelative="true">Background.png</SmallImageURI>
+          <SmallImageURI IsResource="false" IsRelative="true">www\img\icon_128.png</SmallImageURI>
           <Count>0</Count>
-          <BackgroundImageURI IsResource="false" IsRelative="true">Background.png</BackgroundImageURI>
+          <BackgroundImageURI IsResource="false" IsRelative="true">www\img\icon_128.png</BackgroundImageURI>
           <Title>NewsReader</Title>
-          <BackContent></BackContent>
-          <BackBackgroundImageURI></BackBackgroundImageURI>
-          <BackTitle></BackTitle>
-          <LargeBackgroundImageURI></LargeBackgroundImageURI>
-          <LargeBackContent></LargeBackContent>
-          <LargeBackBackgroundImageURI></LargeBackBackgroundImageURI>
-          <DeviceLockImageURI></DeviceLockImageURI>
+          <BackContent>
+          </BackContent>
+          <BackBackgroundImageURI>
+          </BackBackgroundImageURI>
+          <BackTitle>
+          </BackTitle>
+          <LargeBackgroundImageURI>
+          </LargeBackgroundImageURI>
+          <LargeBackContent>
+          </LargeBackContent>
+          <LargeBackBackgroundImageURI>
+          </LargeBackBackgroundImageURI>
+          <DeviceLockImageURI>
+          </DeviceLockImageURI>
           <HasLarge>false</HasLarge>
         </TemplateFlip>
       </PrimaryToken>

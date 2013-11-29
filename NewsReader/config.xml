@@ -21,4 +21,9 @@
 -->
 <widget>
     <access origin="*"/>
+    <access origin="http://nt3.ggpht.com/*"/>
+    <access origin="http://news.google.com/*"/>
+    <access origin="http://news-reader-proxy.herokuapp.com/*"/>
+    <access origin="http://*/*"/>
+ 
 </widget>

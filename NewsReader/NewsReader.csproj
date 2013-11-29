@@ -163,9 +163,11 @@
   <ItemGroup>
     <Content Include="config.xml" />
     <Content Include="www\cordova.js" />
-    <Content Include="www\index.html" />
-    <Content Include="www\css\index.css" />
-    <Content Include="www\js\index.js" />
+    <Content Include="www\fonts\pictos-web.svg" />
+    <Content Include="www\img\icon_128.png" />
+    <Content Include="www\index.html">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="www\img\logo.png" />
     <Content Include="Images\appbar.back.rest.png" />
     <Content Include="Images\appbar.close.rest.png" />
@@ -173,6 +175,55 @@
     <Content Include="Images\appbar.next.rest.png" />
     <Content Include="Images\appbar.save.rest.png" />
     <Content Include="Images\appbar.stop.rest.png" />
+    <Content Include="www\javascripts\app.js" />
+    <Content Include="www\javascripts\background-setup.js" />
+    <Content Include="www\javascripts\background.js" />
+    <Content Include="www\javascripts\foreground-setup.js" />
+    <Content Include="www\javascripts\lib\feedParsers\google.js" />
+    <Content Include="www\javascripts\models\article.js" />
+    <Content Include="www\javascripts\models\displayed-articles.js" />
+    <Content Include="www\javascripts\models\search.js" />
+    <Content Include="www\javascripts\models\setting.js" />
+    <Content Include="www\javascripts\setup.js" />
+    <Content Include="www\javascripts\templates.js" />
+    <Content Include="www\javascripts\vendor\backbone-indexeddb.js" />
+    <Content Include="www\javascripts\vendor\backbone.eventdata.js" />
+    <Content Include="www\javascripts\vendor\backbone.min.js" />
+    <Content Include="www\javascripts\vendor\filer.js" />
+    <Content Include="www\javascripts\vendor\filer.min.js" />
+    <Content Include="www\javascripts\vendor\hotkeys.js" />
+    <Content Include="www\javascripts\vendor\inflection.js" />
+    <Content Include="www\javascripts\vendor\jquery-1.7.2.min.js" />
+    <Content Include="www\javascripts\vendor\jquery-migrate.min.js" />
+    <Content Include="www\javascripts\vendor\jquery.jfeed.pack.js" />
+    <Content Include="www\javascripts\vendor\jquery.min.js" />
+    <Content Include="www\javascripts\vendor\jquery.timeago.js" />
+    <Content Include="www\javascripts\vendor\jquery.tinysort.min.js" />
+    <Content Include="www\javascripts\vendor\masonry.min.js" />
+    <Content Include="www\javascripts\vendor\masonry_ordered.js" />
+    <Content Include="www\javascripts\vendor\ral.min.js" />
+    <Content Include="www\javascripts\vendor\underscore.min.js" />
+    <Content Include="www\javascripts\views\article-view.js" />
+    <Content Include="www\javascripts\views\category-view.js" />
+    <Content Include="www\javascripts\views\closewindow-view.js" />
+    <Content Include="www\javascripts\views\fullscreen-view.js" />
+    <Content Include="www\javascripts\views\notifications-view.js" />
+    <Content Include="www\javascripts\views\search-results-view.js" />
+    <Content Include="www\javascripts\views\search-view.js" />
+    <Content Include="www\javascripts\views\settings-view.js" />
+    <Content Include="www\javascripts\views\window-view.js" />
+    <Content Include="www\stylesheets\base.css" />
+    <Content Include="www\stylesheets\fonts\pictos.css" />
+    <Content Include="www\stylesheets\masonry.css" />
+    <Content Include="www\stylesheets\minified.css" />
+    <Content Include="www\stylesheets\reset.css" />
+    <Content Include="www\stylesheets\specific\categories.css" />
+    <Content Include="www\stylesheets\specific\settings.css" />
+    <Content Include="www\stylesheets\ui\browser.css" />
+    <Content Include="www\stylesheets\ui\headings.css" />
+    <Content Include="www\stylesheets\ui\navigation.css" />
+    <Content Include="www\stylesheets\ui\news_index.css" />
+    <Content Include="www\stylesheets\ui\search.css" />
     <None Include="cordova\lib\build.js" />
     <None Include="cordova\lib\clean.js" />
     <None Include="cordova\lib\deploy.js" />
@@ -196,14 +247,40 @@
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>
     </None>
+    <None Include="www\fonts\pictos-web.eot" />
+    <None Include="www\fonts\pictos-web.ttf" />
+    <None Include="www\fonts\pictos-web.woff" />
+    <None Include="www\javascripts\settings.json" />
+    <None Include="www\javascripts\templates\article.jst" />
+    <None Include="www\javascripts\templates\browser.jst" />
+    <None Include="www\manifest.json" />
+    <None Include="www\_locales\ar\messages.json" />
+    <None Include="www\_locales\cs\messages.json" />
+    <None Include="www\_locales\de\messages.json" />
+    <None Include="www\_locales\el\messages.json" />
+    <None Include="www\_locales\en\messages.json" />
+    <None Include="www\_locales\en_GB\messages.json" />
+    <None Include="www\_locales\en_US\messages.json" />
+    <None Include="www\_locales\es\messages.json" />
+    <None Include="www\_locales\fil\messages.json" />
+    <None Include="www\_locales\fr\messages.json" />
+    <None Include="www\_locales\hi\messages.json" />
+    <None Include="www\_locales\it\messages.json" />
+    <None Include="www\_locales\ja\messages.json" />
+    <None Include="www\_locales\ko\messages.json" />
+    <None Include="www\_locales\nl\messages.json" />
+    <None Include="www\_locales\no\messages.json" />
+    <None Include="www\_locales\pl\messages.json" />
+    <None Include="www\_locales\pt_BR\messages.json" />
+    <None Include="www\_locales\pt_PT\messages.json" />
+    <None Include="www\_locales\ru\messages.json" />
+    <None Include="www\_locales\tr\messages.json" />
+    <None Include="www\_locales\uk\messages.json" />
+    <None Include="www\_locales\vi\messages.json" />
+    <None Include="www\_locales\zh_CN\messages.json" />
+    <None Include="www\_locales\zh_TW\messages.json" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ApplicationIcon.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Background.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -211,6 +288,17 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="FlurryWP8SDK">
+      <HintPath>..\..\BoardGameWindowsPhone\Sanamluang\Bin\Release\FlurryWP8SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleAds">
+      <HintPath>..\..\BoardGameWindowsPhone\Sanamluang\Bin\Release\GoogleAds.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK">
+      <HintPath>..\..\BoardGameWindowsPhone\Sanamluang\Bin\Release\HockeySDK.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
